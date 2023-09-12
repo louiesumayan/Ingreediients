@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+
+input {
+  width: 350px;
+  padding: 10px 25px;
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid black;
+}
+
+button {
+  background-color: orangered;
+  outline: none;
+  color: #fff;
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: orange;
+  color: #333;
+}
+
+input::placeholder {
+  padding-left: 0;
+}
+
+.results-data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 41px;
+  width: 674px;
+}
+
+.item-results,
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-results {
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 5px 15px black;
+  width: 90%;
+  margin: 0 auto;
+}
+.item-results img {
+  width: 100%;
+  border-radius: 22px 22px 0 0;
+}
+.result {
+  margin-bottom: 50px;
+}
+
+.result h1 {
+  text-align: center;
+}
+
+.meal-details {
+  background-color: #fff;
+  width: 100%;
+  width: 1440px;
+  max-width: 80%;
+  margin: 0 auto;
+  height: 90%;
+  overflow-y: scroll;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 10px 5px 15px black;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-in;
+  display: none;
+}
+
+.meal-name {
+  font-size: 1rem;
+  text-align: center;
+}
+#get-recipe {
+  margin-bottom: 20px;
+}
+
+.example {
+  text-align: center;
+  color: rgb(9, 130, 9);
+  background-color: yellow;
+}
+
+.error {
+  text-align: center;
+  padding: 20px;
+  grid-column: 1/4;
+}
+.showRecipe {
+  display: block;
+}
+
+.recipe-img img {
+  width: 250px;
+  height: 250px;
+}
+@media screen and (max-width: 700px) {
+  .results-data {
+    grid-template-columns: 1fr;
+    width: 320px;
+  }
+  .result h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  input {
+    width: 150px;
+  }
+  .quotes {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .home-title {
+    margin-top: 50px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .meal-details {
+    height: 50%;
+  }
+}

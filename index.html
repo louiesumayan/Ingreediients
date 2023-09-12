@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Ingreedients</title>
+  </head>
+  <body>
+    <h1 class="home-title">Find Meals For Your Ingredients</h1>
+    <p class="quotes">
+      Real food doesn't have ingredients, real food is ingredients
+      <span>- Jamie Oliver</span>
+    </p>
+
+    <div class="search-box">
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Enter Ingredients"
+      />
+      <button id="buttonEl">Search</button>
+    </div>
+
+    <div class="result">
+      <p class="example">search 1 ingredient only ex. Egg</p>
+      <h1>Your Search Results:</h1>
+      <div class="results-data" id="res-data">
+        <!-- result -->
+      </div>
+    </div>
+    <div class="meal-details" id="meal-details"></div>
+  </body>
+</html>
